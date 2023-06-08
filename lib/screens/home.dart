@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ristorante_panucci/components/main_drawer.dart';
+import 'package:ristorante_panucci/screens/drink_menu.dart';
+import 'package:ristorante_panucci/screens/food_menu.dart';
 import 'package:ristorante_panucci/screens/highlights.dart';
 import 'package:ristorante_panucci/themes/app_colors.dart';
 
@@ -14,6 +16,11 @@ class _HomeState extends State<Home> {
   int _currentPage = 0;
   @override
   Widget build(BuildContext context) {
+    final List<Widget> pages = [
+      const Highlights(),
+      const FoodMenu(),
+      const DrinkMenu(),
+    ];
     return Scaffold(
       appBar: AppBar(
         title: const Text("Ristorante Panucci"),
@@ -61,7 +68,7 @@ class _HomeState extends State<Home> {
           });
         },
       ),
-      body: const Highlights(),
+      body: pages.elementAt(_currentPage),
     );
   }
 }
