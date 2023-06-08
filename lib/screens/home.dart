@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ristorante_panucci/components/main_drawer.dart';
+import 'package:ristorante_panucci/screens/checkout.dart';
 import 'package:ristorante_panucci/screens/drink_menu.dart';
 import 'package:ristorante_panucci/screens/food_menu.dart';
 import 'package:ristorante_panucci/screens/highlights.dart';
@@ -39,7 +40,7 @@ class _HomeState extends State<Home> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return const Home();
+            return const Checkout();
           }));
         },
         child: const Icon(Icons.point_of_sale),
