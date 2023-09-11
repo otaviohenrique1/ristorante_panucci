@@ -1,3 +1,3 @@
 # ristorante_panucci
 
-PRojeto do curso "Flutter: estilizando e reproduzindo layouts" da Alura
+Projeto do curso "Flutter aplicando constraints e implementando layouts responsivos" da Alura
